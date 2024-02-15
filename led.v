@@ -9,6 +9,8 @@ localparam MAX_CNT_PER = 25'd25000_000;
 
 reg [24:0] cnt;
 
+reg A;
+
 always@(posedge clk or negedge rst_n) begin
     if(!rst_n)    
         cnt <= 25'd0;
